@@ -1,6 +1,5 @@
 package com.api.parking.control.services;
 
-import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
@@ -34,7 +33,7 @@ public class ParkingSpotService {
     }
 
     public boolean existsByLicencePlateCar(String licensePlateCar) {
-        return parkingSpotRepository.existsByLicencePlateCar(licensePlateCar);
+        return parkingSpotRepository.existsBylicensePlateCar(licensePlateCar);
     }
 
     public Page<ParkingSpotModel> findAll(Pageable pageable) {

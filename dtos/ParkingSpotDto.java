@@ -23,7 +23,7 @@ public class ParkingSpotDto {
     private String modelCar;
 
     @NotBlank
-    private String coloCar;
+    private String colorCar;
 
     @NotBlank
     private String responsableName;
